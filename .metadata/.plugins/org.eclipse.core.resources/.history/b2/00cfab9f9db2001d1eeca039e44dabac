@@ -1,0 +1,5 @@
+package com.example.StudentExample.Repository;
+
+public class StudentRepo {
+
+}

@@ -1,0 +1,17 @@
+package com.example.demo.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.demo.Entity.StudentEntity;
+import com.example.demo.Repository.StudentRepo;
+public class studentservice {
+	@Autowired(required=true)
+	StudentRepo stRepo;
+	
+	public StudentEntity saveDetails(StudentEntity e)
+	{
+		return stRepo.save(e);
+	}
+}
+
+
